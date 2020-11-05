@@ -1,0 +1,25 @@
+.sidebar-nav {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  align-items: center;
+  padding: 2rem 1rem;
+  &--profile {
+    width: 4.5rem;
+  }
+  &--details {
+    padding-left: 1rem;
+    &__name {
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    &__account-type {
+      font-size: 1.2rem;
+    }
+  }
+  &--notification {
+    width: 2rem;
+  }
+  &--menu {
+    width: 2rem;
+  }
+}

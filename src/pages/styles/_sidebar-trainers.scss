@@ -1,0 +1,26 @@
+.sidebar-trainers {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  align-items: center;
+  margin: 1rem;
+  background-color: beige;
+  padding: 1rem 0rem 1rem 5rem;
+  border-radius: 1.2rem;
+  &--profile {
+    img {
+      width: 3.5rem;
+    }
+  }
+  &--details {
+    margin-left: 1rem;
+    &__name {
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+  &--chat-icon {
+    img {
+      width: 1.8rem;
+    }
+  }
+}

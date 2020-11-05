@@ -1,0 +1,59 @@
+.sidebar-training-card {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr) 0.5fr;
+  padding: 1rem 2rem;
+  align-items: center;
+  background-color: rgb(77, 134, 241);
+  margin: 2rem 1rem;
+  border-radius: 1.5rem;
+  filter: drop-shadow(0 1rem 0 blue);
+  &--details {
+    color: white;
+    padding-left: 1rem;
+    &__title {
+      font-size: 1.6rem;
+      margin-bottom: 0.7rem;
+      font-weight: 400;
+    }
+    &__venue {
+      font-size: 1.3rem;
+      margin-bottom: 0.7rem;
+    }
+    &__time {
+      font-size: 1.6rem;
+      color: black;
+      padding-bottom: 0.2rem;
+      width: 70%;
+      background-color: white;
+      border-radius: 0.6rem;
+      text-align: center;
+    }
+  }
+  &--target {
+    text-align: center;
+    color: white;
+    margin-top: -1rem;
+    &__time {
+      font-size: 3.5rem;
+      font-weight: 200;
+    }
+    &__unit {
+      margin-top: -0.3rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+    &__activity {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+  &--options {
+    filter: invert(100%);
+    cursor: pointer;
+    img {
+      width: 2rem;
+    }
+    // transform: translateX(3rem);
+  }
+}

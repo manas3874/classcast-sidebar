@@ -1,0 +1,28 @@
+html {
+  font-size: 10px;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+$fancy-font: "Playfair Display", serif;
+$main-font: "Raleway", sans-serif;
+body {
+  font-family: $main-font;
+  margin: 0;
+  padding: 0;
+}
