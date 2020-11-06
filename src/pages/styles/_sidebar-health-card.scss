@@ -1,13 +1,17 @@
 .sidebar-health-card {
+  padding: 0 2rem;
+
   &--content {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
   }
   &--details {
     display: flex;
     align-items: center;
     &__icon {
       width: 2.3rem;
-      background-color: cyan;
+      // background-color: cyan;
       padding: 0.4rem;
       border-radius: 0.6rem;
     }
@@ -17,14 +21,14 @@
     }
   }
   &--progress-bar {
-    width: 100%;
+    width: 7rem;
     height: 4px;
-    background-color: lightgrey;
+    background-color: rgb(206, 188, 188);
     margin-top: 1rem;
     &__content {
-      width: 60%;
+      // width: 60%;
       height: 4px;
-      background-color: blue;
+      // background-color: blue;
     }
   }
 }

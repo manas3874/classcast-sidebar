@@ -4,12 +4,33 @@ import SidebarHealthCard from "./components/SidebarHealthCard";
 import SidebarSignup from "./components/SidebarSignup";
 import SidebarTrainingCard from "./components/SidebarTrainingCard";
 import SidebarTrainers from "./components/SidebarTrainers";
-
+import { Link } from "react-router-dom";
 class Homepage extends Component {
   render() {
     return (
       <div className="homepage">
-        <div className="homepage--left">hello left</div>
+        <div className="homepage--left">
+          <h2 className="homepage--left__header">Welcome</h2>
+          <p className="homepage--left__text-1">
+            This is a sidebar concept made using React.js
+          </p>
+          <p className="homepage--left__text-2">
+            The scope of this project is not to make any functional component.
+            This is just to view the UI. The design can be found on{" "}
+            <Link
+              to={{ pathname: "https://i.ibb.co/YkCYv0W/design-image.png" }}
+              target="_blank"
+            >
+              this link
+            </Link>
+          </p>
+          <p className="homepage--left__text-2">
+            The sidebar can be made dynamic by fetching data in real-time from
+            local bluetooth-devices (fitness bands) or fetching data from our
+            server. States will be established and managed to render dynamic
+            content.
+          </p>
+        </div>
         <div className="homepage--right">
           <SidebarNav name="Floyd Miles" account="Host account" />
           <h2 className="homepage--right__health-cards-header">Health</h2>
@@ -18,16 +39,25 @@ class Homepage extends Component {
               title="Hours"
               content="6:25"
               source="https://i.ibb.co/2KKt2T5/clock.png"
+              iconColor="4D95FC"
+              progressColor="4D95FC"
+              progress="80"
             />
             <SidebarHealthCard
               title="RPM"
               content="120"
               source="https://i.ibb.co/PwPnBd8/wheel.png"
+              iconColor="ED7066"
+              progressColor="ED7066"
+              progress="100"
             />
             <SidebarHealthCard
               title="KCal"
               content="184"
               source="https://i.ibb.co/HVGHD2w/apple.png"
+              iconColor="6DCF5E"
+              progressColor="6DCF5E"
+              progress="40"
             />
           </div>
           <SidebarSignup />
@@ -45,7 +75,8 @@ class Homepage extends Component {
               targetTime2="20"
               unit2="min"
               activity2="Stretch"
-              color="blue"
+              color="4D95FC"
+              id="first"
             />
             <SidebarTrainingCard
               title="Crossfit"
@@ -57,14 +88,17 @@ class Homepage extends Component {
               targetTime2="20"
               unit2="min"
               activity2="Pull-Ups"
-              color="red"
+              color="ED7066"
+              id="second"
             />
           </div>
-          <img
-            src="https://i.ibb.co/sQJ7nbZ/horizontal-dots-black.png"
-            alt=""
-            className="homepage--right__horizontal-dots"
-          />
+          <div className="homepage--right__horizontal-dots">
+            <img
+              src="https://i.ibb.co/sQJ7nbZ/horizontal-dots-black.png"
+              alt=""
+            />
+          </div>
+
           <div className="homepage--right__trainers">
             <h2 className="homepage--right__trainers-header">Your Trainers</h2>
             <SidebarTrainers

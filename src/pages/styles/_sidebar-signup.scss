@@ -2,13 +2,14 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  padding: 2rem 3rem;
-  background-color: beige;
-  margin: 2rem 1rem;
+  padding: 1rem 3rem;
+  background-color: rgb(238, 238, 215);
+  margin: 2rem 2rem;
   border-radius: 1.5rem;
   filter: drop-shadow(0px 10px 1px rgb(240, 240, 142));
   &--img {
-    width: 70%;
+    width: 50%;
+    margin-left: 3rem;
   }
   &--details {
     display: flex;

@@ -4,7 +4,9 @@
   align-items: center;
   padding: 2rem 1rem;
   &--profile {
-    width: 4.5rem;
+    width: 4rem;
+    margin-left: 3rem;
+    cursor: pointer;
   }
   &--details {
     padding-left: 1rem;
@@ -18,8 +20,10 @@
   }
   &--notification {
     width: 2rem;
+    cursor: pointer;
   }
   &--menu {
     width: 2rem;
+    cursor: pointer;
   }
 }
