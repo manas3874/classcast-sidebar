@@ -1,4 +1,4 @@
-# This project only has a sidebar (right hand side) for a dashboard-like-app
+## This project only has a sidebar (right hand side) for a dashboard-like-app
 
 [View this project live](https://heuristic-booth-5c6caa.netlify.app/)
 
